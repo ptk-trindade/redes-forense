@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <title>Protocolo MQTT - Redes 1</title>
   </head>
   <body>
@@ -118,12 +118,47 @@
     <div class="container content" id="antiForense">
         <h1 class="display-4 title">Anti-forense</h1>
         <ul>
-        <p class="lead">
-            Texto em construção...
-            <br/><br/>
-            Mais Texto
-        </p>
+          <p class="lead">
+          Após invadir um sistema, o atacante pode utilizar de várias formas para dificultar que peritos forenses descubram quem foi o responsável pelo ato. Isso pode ser feito deletando rastros, criptografando vestígios, criando pistas falsas, aumentando o tempo de análise do perito, manipulando dados em mídias externas…
+          <br/><br/>
+          Alguns destes métodos são:
+
+        <p class="h4"> Criptografia </p>
+        <ul style="list-style: none;">
+          A criptografia torna as informações do arquivo cifradas com base em uma chave. Dessa forma, só consegue acesso aos dados reais o usuário que possuir a chave de criptografia.            
+          <br/><br/>
+          Diferente do que se pode imaginar, decifrar a chave de criptografia não é algo viável uma vez que, se tratando de uma boa criptografia, a única forma de descobri-la seria a força bruta, o que levaria muitos anos.
         </ul>
+
+        <br/><br/>
+        <p class="h4"> Esteganografia </p>
+        <ul style="list-style: none;">
+          Esteganografia é utilizar uma outra mídia para esconder uma determinada informação. Essas outras mídias são, geralmente, de áudio ou imagem.
+        </ul>
+
+        <br/><br/>
+        <p class="h4"> Wiping </p>
+        <ul style="list-style: none;">
+          O wipe é a sobre-escrita de dados e metadados anteriormente salvos na máquina, assim como slack-spaces.
+        
+          <br/><br/>
+          <p class="h5"> Slack-spaces </p>
+          <ul style="list-style: none;">
+            Um disco rígido vem de fábrica dividido em setores, geralmente de 512 bytes. O sistema operacional agrega esses setores em clusters (ou blocos), e separa um número inteiro de clusters para cada arquivo.
+            <br/><br/>
+            A diferença entre o tamanho lógico do arquivo e o espaço físico do cluster é o slack space. Nele ficam dados sobre os antigos arquivos que já foram guardados naqueles endereços de memória.
+            <br/><br/>
+            <img src="images/slackspace.webp" width="50%" alt="...">
+          </ul>
+        </ul>
+        
+        <br/><br/>
+        <p class="h5"> Proxy e VPN </p>
+        <ul style="list-style: none;">
+          Tanto o Proxy como a VPN mascaram o IP da máquina cliente, de forma que o servidor só tem conhecimento do IP do intermediário.
+          <img src="images/proxy.svg.png" width="100%" alt="...">
+        </ul>
+
     </div>
 
     <br/>
