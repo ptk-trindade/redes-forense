@@ -93,7 +93,7 @@
             <br/><br/>
             Para proteger suas mensagens na Internet, alguns indivíduos criptografam seus dados utilizando softwares ou serviços de e-mail especializados. Outros usam o padrão de e-mail seguro (S/MIME) que é integrado em muitos clientes de e-mail. As chaves de criptografia usadas no S/MIME são geralmente armazenadas no sistema do usuário, e protegidas por uma senha. Entretanto, estas chaves também podem ser geradas e armazenadas em um dispositivo de hardware específico para esse contexto, como o iButton, um dispositivo portátil que destruirá as chaves de criptografia que contêm se forem adulteradas.
             <br/><br/>
-            <img src="images/email.jpg" alt="Sistemas Distribuidos" width="80%">
+            <img src="images/email.jpg" alt="Email" width="80%">
             <br/><br/>
             Contudo, não é viável decifrar o tráfego de uma rede, e é mais eficaz buscar e recuperar as provas digitais a partir dos sistemas finais. Os criminosos mais experientes já perceberam isso, e ao invés de tentar obter cartões de crédito enquanto são transmitidos entre o cliente e o servidor através de uma conexão criptografada Secure Sockets Layer (SSL), os criminosos têm como alvo os pontos finais da comunicação. Os hackers geralmente roubam cartões de crédito instalando um vírus Trojan nos sistemas dos indivíduos e monitorando suas teclas, ou invadindo o servidor e roubando o arquivo que contém informações de cartão de crédito.
         </p>
@@ -110,7 +110,7 @@
             <br/><br/>
             A abordagem mais comum para a coleta de provas digitais sobre as camadas físicas e de enlace de dados, é conhecida como “eavesdropping” (escutar secretamente). Com a ajuda de uma ferramenta de monitoramento de rede, como um sniffer, os investigadores (ou criminosos) podem capturar grandes quantidades de informações enquanto elas viajam através de uma rede. Esta abordagem de coleta de tráfego da rede é comparável a fazer um backup de um disco rígido, com o sniffer conseguindo capturar cada byte transmitido na rede. Os investigadores digitais podem usar um sniffer para monitorar o computador de um criminoso em uma rede e recuperar imagens, anexos de e-mail ou qualquer outra coisa que os infratores tenham transmitido na rede.
             <br/><br/>
-            <img src="images/sniffer.png" alt="Sistemas Distribuidos" width="80%">
+            <img src="images/sniffer.png" alt="Sniffer" width="80%">
             <br/><br/>
             Até recentemente, os registros de atividades nas camadas física e de enlace eram raramente guardados por uma organização. Registar todas as informações que passam por uma rede é um processo custoso, e pode resultar em arquivos de registro muito grandes. Entretanto, como o armazenamento está se tornando mais barato e as ferramentas de monitoramento, mais desenvolvidas, cada vez mais organizações estão guardando tais registros. Sem estes tipos de logs, torna-se muito mais difícil obter provas digitais das camadas físicas e de enlace, pois a maioria dos dados não são armazenados por muito tempo. 
         </p>
@@ -123,9 +123,13 @@
         <h1 class="display-4 title">Investigação nas Camadas de Rede e Transporte</h1>
         <ul>
         <p class="lead">
-            Texto em construção...
-            <br/><br/>
-            Mais Texto
+          Para que um sistema de comunicação funcione, ele deve possuir um mecanismo de endereçamento. Muitas vezes, há também a necessidade de existir alguma forma de verificação para provar que uma mensagem tenha chegado ao seu destino. As redes de computadores possuem um esquema de endereçamento e, normalmente, um método para confirmar que a informação foi entregue corretamente. As camadas de rede e transporte são as responsáveis por estes importantes aspectos das redes.
+          <br/><br/>
+          Ações nas camadas de rede e transporte geram informações que muitas vezes são essenciais em uma investigação. Os arquivos de log contêm dados sobre as atividades na rede, a hora de ocorrência e os endereços das máquinas envolvidas. As tabelas de estado contém informações importantíssimas, incluindo endereços de IP das conexões recentemente formadas entre hosts. Os endereços IP nos arquivos de log e tabelas de estado podem ser usados para determinar o ponto de origem de um crime, levando assim os investigadores aos prováveis suspeitos. Além disso, estas provas digitais são úteis para a reconstrução investigativa e são cruciais para estabelecer as ligações do delito.
+          <br/><br/>
+          <img src="images/firewalllog.png" alt="FireWall Log" width="80%">
+          <br/><br/>
+          Processar e analisar provas nas nas camadas de rede e de transporte é como retirar a cola que une uma rede de computadores. Este processo pode gerar muitas informações, mas o investigador tem que possuir a habilidade para conseguir distinguir as evidências dos lixos. Em uma situação destas é necessário se familiarizar com os detalhes técnicos dessas camadas para tirar o melhor proveito delas como uma fonte de provas digitais.
         </p>
         </ul>
     </div>
