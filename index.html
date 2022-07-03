@@ -297,14 +297,50 @@
 
       <br />
       <!-- Perguntas -->
-      <div class="container content" id="perguntas">
+
+      <hr class="my-4" id="perguntas">
+      <div class="container content">
         <h1 class="display-4 title">Perguntas</h1>
-        <ul>
-          <p class="lead">
-            Texto em construção...
-            <br /><br />
-            Mais Texto
-          </p>
+        <ul style="list-style: none;" class="lead">
+          <br />
+          <p class="h4"> O que é a Análise Forense? </p>
+          
+            Análise Forense Digital é um ramo da ciência forense que trabalha com um conjunto de técnicas para coleta e
+            exame de evidências digitais, reconstrução de dados e ataques, identificação e rastreamento de invasores.
+            
+
+          <br/><br/>
+          <p class="h4">Qual a vantagem e a desvantagem de termos provas distribuídas nas redes?</p>
+          
+            A vantagem é que a distribuição das informações dificulta a destruição das evidências, pois se as provas
+            forem danificadas em uma máquina uma cópia pode ser encontrada em outra. A desvantagem é que torna mais
+            difícil isolar a cena do crime.
+            
+
+          <br/><br/>
+          <p class="h4">Como criminosos podem usar o Anonimato Online? E investigadores?</p>
+          
+            Criminosos usam para esconder suas identidades e assim não deixar rastros quando cometem crimes, diminuindo
+            a chance de serem descobertos. Investigadores podem criar identidades falsas e se passar por criminosos para
+            adquirir informações sigilosas.
+            
+
+          <br/><br/>
+          <p class="h4">Qual a maior dificuldade de se analisar provas nas camadas de rede e transporte?</p>
+          
+            Como essas camadas possuem muitas informações, torna-se muito complexo a análise para distinguir as
+            informações importantes para a investigação das não relevantes.
+            
+
+          <br/><br/>
+          <p class="h4">Ao apagar um arquivo do computador e esvaziar a lixeira, ainda é possível recuperá-lo? E se
+            ocuparmos o espaço físico com outros arquivos?</p>
+            
+            Sim. Ao apagar da lixeira o sistema operacional apenas apaga a referência para o arquivo, mas com
+            ferramentas de análise forense é possível restaurar integralmente o arquivo se ele ainda não tiver sido
+            reescrito. Mesmo que o espaço seja ocupado com outros arquivos, ainda é possível que tenhamos informações
+            sobre o arquivo anterior no slack-space.
+            
         </ul>
       </div>
 
@@ -331,45 +367,13 @@
 
       <!-- TRABALHO REFERENCIA ABAIXO -->
 
-      <!-- Perguntas -->
 
-      <hr class="my-4" id="perguntas">
-      <div class="container content">
-        <h1 class="display-4 title">Perguntas</h1>
-        <h4>Quais as vantagens do MQTT sobre o HTTP?</h4>
-        <p class="lead">As vantagens são: baixo consumo de memória, a baixa necessidade de processamento para o envio de
-          mensagem e o baixo consumo de banda. A primeira referente a necessidade de armazenar apenas a informação dos
-          brokers que estão conectados e os tópicos e ao envio de pacotes pequenos, considerando que o mqtt possui um
-          header mais enxuto.</p>
-        <h4>Explique o paradigma Publish-subscribe.</h4>
-        <p class="lead">Nesse paradigma possuímos três papéis, o broker, o publisher e o subscriber. Nesse paradigma o
-          Publisher enviará mensagens referentes a tópicos, o subscribe irá assinar tópicos para receber mensagens sobre
-          ele e o Broker receberá as mensagens dos publishers e será responsável em enviar as mensagens para os
-          subscribers que tenham interesse nesse assunto específico. </p>
-        <h4>Explique o papel do Broker, dos clientes subscribers e dos clientes publishers.</h4>
-        <p class="lead">O Broker é um intermediador entre os clientes do protocolo. É ele quem vai receber as
-          informações de um cliente publisher e vai enviar essa informação aos clientes subscribers inscritos no tópico
-          referente àquela informação.
-          O Cliente Publisher é aquele que capta uma informação e a envia ao broker. Um exemplo seria um sensor, que
-          envia os dados captados (como temperatura), ao broker que, por sua vez, enviará esse dado aos clientes
-          subscribers.
-          Cliente Subscriber é o cliente que recebe uma informação do broker. Ele deve se inscrever em tópicos definidos
-          pelo broker, cada um sobre uma certa informação, que por sua vez foi captada por um cliente publisher.
-          Vale dizer que o cliente pode ser, ao mesmo tempo, publisher e subscriber, ou seja, enviar e consumir dados
-          ao/do broker.</p>
-        <h4>Quais são as QoS (qualidade de serviço) disponíveis no protocolo e como são caracterizadas?</h4>
-        <p class="lead">São 3 qualidades de serviço. Sendo o QoS=0, envio de mensagem pelo no máximo uma vez,
-          QoS=1,envio de mensagem pelo menos uma vez e QoS=2, envio de mensagem exatamente uma vez.</p>
-        <h4>Qual o tamanho do header fixo do MQTT?</h4>
-        <p class="lead">2 bytes</p>
-      </div>
 
 
 
     </div>
 
-    <!-- Alunos -->
-
+    <!-- Grupo -->
     <div class="container content">
       <h1 class="display-4 title">Grupo</h1>
       <br />
@@ -386,29 +390,6 @@
     </div>
 
     <br /><br />
-
-    <!-- Informações do Grupo -->
-    <!-- <div class="jumbotron jumbotron-fluid bg-dark text-light">
-      <div class="container content">
-        <p>Redes de Computadores I - EEL878 - 2019.1</p>
-        <p>Departamento de Eletronica - Escola Politecnica UFRJ</p>
-        <p>Tema: MQTT</p>
-        <p>
-          Alunos: Renan Neri, Matheus Lomba e Gabriel Bulhões
-        </p>
-        <p>"Este trabalho foi totalmente produzido pelos autores que declaram não terem violado os direitos autorais de
-          terceiros, sejam eles pessoas físicas ou jurídicas. Havendo textos, tabelas e figuras transcritos de obras de
-          terceiros com direitos autorais protegidos ou de domínio público tal como idéias e conceitos de terceiros,
-          mesmo que sejam encontrados na Internet, os mesmos estão com os devidos créditos aos autores originais e estão
-          incluídas apenas com o intuito de deixar o trabalho autocontido. O(s) autor(es) tem(êm) ciência dos Artigos
-          297 a 299 do Código Penal Brasileiro e também que o uso do artifício de copiar/colar texto de outras fontes e
-          outras formas de plágio é um ato ilícito, condenável e passível de punição severa. No contexto da Universidade
-          a punição não precisa se restringir à reprovação na disciplina e pode gerar um processo disciplinar que pode
-          levar o(s) aluno(s) à suspensão;"</p>
-      </div>
-    </div> -->
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
